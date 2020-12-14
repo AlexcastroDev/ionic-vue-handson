@@ -1,13 +1,7 @@
 <template>
-  <div id="job-lists">
-    <div class="job-box">
-      <img src="https://foroalfa.org/imagenes/ilustraciones/g-1.jpg" />
-      <div>
-        <h4>UI designer & UX designer</h4>
-        <span>Google Inc.</span>
-        <hr/>
-      </div>
-    </div>
+  <div id="container">
+    <strong>{{ name }}</strong>
+    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </template>
 
@@ -22,11 +16,28 @@ export default {
 </script>
 
 <style scoped>
-.job-box {
-      display: flex;
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.job-box img{
-  max-width: 40px;
-  max-height: 40px;
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
 }
 </style>
